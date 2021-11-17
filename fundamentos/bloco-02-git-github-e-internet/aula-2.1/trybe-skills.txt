@@ -3,5 +3,6 @@ O que eu vou aprender na Trybe:
 - Unix
 - Bash
 - Git
-React
-Metodologias Ágeis
+- HTML
+- React
+- Javascript
