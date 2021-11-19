@@ -1,5 +1,4 @@
-Lista de exercícios realizados durante o curso de Trybe
-Escola de Desenvolvimento Web
+Lista de exercícios realizados durante o curso da Trybe em Desenvolvimento Web
 
 Período 2021 – 2022
 
