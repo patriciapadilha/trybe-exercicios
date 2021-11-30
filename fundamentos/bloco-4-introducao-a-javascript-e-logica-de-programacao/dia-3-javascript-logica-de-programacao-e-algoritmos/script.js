@@ -46,17 +46,21 @@ for(let i= 0; i < 5; i += 1){
 //  ****
 // *****
 
-let linha = '';
+
+let position = 5;
+
 for(let i= 0; i < 5; i += 1){
-    for(let index = 5 - i; index > 0; index --){
-        linha = linha + ' ';
-        // console.log(' ');
+    let line = '';
+    for(let index = 0; index < 5; index += 1){
+        if(index < position){
+            line = line + ' ';
+        } else {
+            line = line + '*';
+        }
     }
-    for(let index = 0 + i; index < 5; index += 1){
-        linha = linha + '*';
-        // console.log('*');
-    }
+   console.log(line);
+   line = '';
+   position -= 1;
 }
-console.log(linha)
 
 
