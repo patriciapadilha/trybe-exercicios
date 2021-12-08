@@ -45,7 +45,7 @@ for (let num = 0; num < dezDaysList.length; num += 1) {
    ulPai.appendChild(dayItem);
    dayItem.innerText = dezDaysList[num];
    dayItem.nameClass = 'day';
-   console.log(dayItem);
+//    console.log(dayItem);
    
    if (daysList === 24 | daysList === 31) {
        dayItem.className = 'day holiday';
@@ -79,5 +79,71 @@ buttonFeriado.innerHTML = nameButton;
 
 createButton('Feriados');
 
+// Exercício 3:
+// Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
 
+function changeColorHoliday () {
+    let buttonFeriado = document.querySelector('#btn-holiday');
+    let daysHoliday = document.querySelectorAll('.holiday');
+    let background = 'rgb(238,238,238)';
+    let newColor = 'white';
+    
+    
+    buttonFeriado.addEventListener('click', function() {
+        for (let index = 0; index < daysHoliday.length; index += 1) {
+            if (daysHoliday[index].style.backgroundColor === newColor) {
+                daysHoliday[index].style.backgroundColor = background;
+            } else {
+                daysHoliday[index].style.backgroundColor = newColor;
+            }
+        }
+    })
+    
+}
+changeColorHoliday();
 
+// Exercício 4:
+// Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+// Adicione a este botão o ID "btn-friday" .
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+function createButtonFriday (nameButton){
+    let divPai = document.querySelector('.buttons-container');
+    let buttonFeriado = document.createElement('button');
+    let buttonFeriadoID = 'btn-friday';
+    
+    divPai.appendChild(buttonFeriado);
+    buttonFeriado.id = buttonFeriadoID;
+    buttonFeriado.innerHTML = nameButton;
+}
+        
+createButtonFriday('Sexta-feira');
+
+// Exercício 5:
+// Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+
+function changeTextFriday (array) {
+
+    let buttonFriday = document.querySelector('#btn-friday');
+    let daysFriday = document.querySelectorAll('.friday');
+    let newText = 'Sexta-feira'
+
+    buttonFriday.addEventListener('click', function() {
+        for (let index = 0; index < daysFriday.length; index += 1) {
+            if (daysFriday[index].innerHTML !== newText) {
+                daysFriday[index].innerHTML = newText;
+            } else {
+                daysFriday[index].innerHTML = array[index];
+            }
+        }
+    })
+    
+}
+
+let friday = [ 4, 11, 18, 25 ];
+changeTextFriday(friday);
+
+// Exercício 6:
+// Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+// Dica - Propriedade: event.target .
