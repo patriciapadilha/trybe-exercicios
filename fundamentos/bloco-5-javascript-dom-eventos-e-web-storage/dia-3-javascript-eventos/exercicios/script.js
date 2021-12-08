@@ -90,7 +90,8 @@ function changeColorHoliday () {
     let newColor = 'white';
     
     
-    buttonFeriado.addEventListener('click', function() {
+    buttonFeriado.addEventListener('click', function(event) {
+        event.stopPropagation();
         for (let index = 0; index < daysHoliday.length; index += 1) {
             if (daysHoliday[index].style.backgroundColor === newColor) {
                 daysHoliday[index].style.backgroundColor = background;
@@ -129,7 +130,8 @@ function changeTextFriday (array) {
     let daysFriday = document.querySelectorAll('.friday');
     let newText = 'Sexta-feira'
 
-    buttonFriday.addEventListener('click', function() {
+    buttonFriday.addEventListener('click', function(event) {
+        event.stopPropagation();
         for (let index = 0; index < daysFriday.length; index += 1) {
             if (daysFriday[index].innerHTML !== newText) {
                 daysFriday[index].innerHTML = newText;
@@ -147,3 +149,51 @@ changeTextFriday(friday);
 // Exercício 6:
 // Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
 // Dica - Propriedade: event.target .
+
+// function zoomIn ()
+// mouseover
+// class days
+
+// let days = document.querySelectorAll('#days');
+//     days.addEventListener('mouseover', function(event) {
+//      event.target.style.fontSize = '20px';
+//      event.target.style.fontWeight = '600';
+//     });
+
+// function zoomIn () {
+//   let days = document.querySelector('#days'); //id da ul
+
+//   days.addEventListener('mouseover', function(event) {
+//     // event.stopPropagation();
+//     console.log(event.target);
+//     event.target.style.fontSize = '30px';
+//     event.target.style.fontWeight = '600';
+//   })
+// }
+// zoomIn();
+
+function zoomIn () {
+    let days = document.querySelector('#days'); 
+  
+    days.addEventListener('mouseover', function(event) {
+      event.stopPropagation();
+      console.log(event.target);
+      event.target.style.fontSize = '30px';
+      event.target.style.fontWeight = '600';
+    })
+  }
+  zoomIn();
+
+// function zoomOut ()
+// mouseout
+
+function zoomOut () {
+    let days = document.querySelector('#days');
+  
+    days.addEventListener('mouseout', function(event) {
+      event.target.style.fontSize = '20px';
+      event.target.style.fontWeight = '200';
+    })
+  }
+  zoomOut();
+
