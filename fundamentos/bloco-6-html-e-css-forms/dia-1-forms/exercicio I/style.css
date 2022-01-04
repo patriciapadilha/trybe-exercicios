@@ -32,10 +32,28 @@ fieldset legend {
     font-size: 25px;
 }
 
-input {
+input[type="text"] {
     width: 100%;
     margin-top: 1px;
     margin-bottom: 10px;
     border: 1px solid rgb(194, 191, 191);
 }
 
+
+
+input[type="radio"] {
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 1px;
+}
+
+button {
+    padding: 10px;
+}
