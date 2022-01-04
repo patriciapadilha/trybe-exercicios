@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;;
+
+}
+
+body {
+    background-color: rgb(173, 208, 209);
+    font-family: "Helvetica" , "Arial" , sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid rgb(100, 97, 97);
+}
+
+fieldset {
+    background-color: white;
+    border-radius: 3px;
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px
+}
+
+fieldset legend {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+
+input {
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(194, 191, 191);
+}
+
