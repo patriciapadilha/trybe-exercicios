@@ -1,4 +1,13 @@
-* {
+#button {
+    margin-top: 15px;
+}
+
+body {
+    background-color: aliceblue;
+    color: rgb(93, 96, 99);
+}
+
+/* * {
     margin: 0px;
     padding: 0px;;
 
@@ -65,4 +74,4 @@ button {
     margin-right: auto;
     margin-left: auto;
     padding: 10px;
-}
+} */
