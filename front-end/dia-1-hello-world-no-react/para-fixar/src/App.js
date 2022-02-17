@@ -1,14 +1,9 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { Component } from 'react';
+import SobreMim from './Component';
 
 function App() {
-  return (
-    <div>
-      <p>Nome</p>
-      <h1>Descrição</h1>
-    </div>
-  );
+  return <SobreMim/>
 }
 
 export default App;

@@ -1,17 +1,16 @@
 import { Component } from "react";
-import App from "./App";
 
-class elemento extends Component {
+class SobreMim extends Component {
     render () {
         return (
-            <div>
-              <p>Nome</p>
+            <>
+              <p>Nome: Patricia</p>
               <h1>Descrição</h1>
-            </div>
+            </>
         );
 
     }
 }
       
 
-export default Component;
+export default SobreMim;
