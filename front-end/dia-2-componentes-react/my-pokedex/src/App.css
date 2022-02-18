@@ -40,7 +40,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(252, 252, 212);
+  background-image: url("/src/image/fundo.jpg");
+  background-size: cover;
   color: rgb(71, 70, 70);
   text-align: center;
 }
@@ -49,3 +50,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+header {
+  background-color: #333;
+  padding: 1px;
+  color:antiquewhite;
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+  background-color: #333;
+  padding: 1px;
+  color:antiquewhite;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 130px;
+}
+

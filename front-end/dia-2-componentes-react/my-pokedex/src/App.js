@@ -10,10 +10,17 @@ import PokeList from "./components/PokeList";
 class App extends Component {
   render () {
     return (
+      <>
       <main>
-        <h1> Pokedex</h1>
+        <header>
+          <h1> Pokedex</h1>
+        </header>
         <PokeList/>
       </main>
+      <footer>
+        <p>Atividade desenvolvida no curso da Trybe, utilizando React.</p>
+      </footer>
+      </>
     );
   }
 }
