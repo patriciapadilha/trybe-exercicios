@@ -29,6 +29,8 @@ function manipulandoParametros (param1, param2, param3) {
    return promise;
 }
 
-manipulandoParametros(1, 1, 1)
-  .then((result) => console.log(result)) 
-  .catch(err => console.log("erro: %s", err.message))
+module.exports = manipulandoParametros;
+
+// manipulandoParametros(1, 1, 1)
+//   .then((result) => console.log(result)) 
+//   .catch(err => console.log("erro: %s", err.message))
