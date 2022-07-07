@@ -1,6 +1,5 @@
 const Book = (sequelize, DataTypes) => {
     const BookTable = sequelize.define("Book", {
-      id: DataTypes.INTEGER,
       title: DataTypes.STRING,
       author: DataTypes.STRING,
       pageQuantity: DataTypes.INTEGER,
@@ -10,5 +9,7 @@ const Book = (sequelize, DataTypes) => {
   
     return BookTable;
   };
+
+  // id não vai no model
   
   module.exports = Book;
