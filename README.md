@@ -162,7 +162,22 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 22-1: _Intro - Node.js_
 - [x] 22-2: _Node.js - Fluxo Assíncrono_
 - [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [ ] 22-4: _Express - HTTP com Node.js_
-- [ ] 22-5: _Express - Middlewares_
-- [ ] 22-6: _[Projeto - Talker Manager]()_
+- [x] 22-4: _Express - HTTP com Node.js_
+- [x] 22-5: _Express - Middlewares_
+- [x] 22-6: _[Projeto - Talker Manager]()_
 
+##### Bloco 23: Node.js - Model, Service, Controller
+
+- [x] 23-1: _Arquitetura de software - Model_
+- [x] 23-2: _Arquitetura de software - Service, Controller_
+- [x] 23-3: _Arquitetura Web - Rest e Restful_
+- [x] 23-4: _Arquitetura de software - Testes_
+- [x] 23-5: _[Projeto - Store Manager]()_
+
+##### Bloco 24: Node.js - ORM e Autenticação
+
+- [x] 24-1: _ORM - Sequelize_
+- [x] 24-2: _ORM - Associations_
+- [ ] 24-3: _JWT_
+- [ ] 24-4: _Testando APIs com Testes deIntegração_
+- [ ] 24-5: _[Projeto - API de Blogs]()_
